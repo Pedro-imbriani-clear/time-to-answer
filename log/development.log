@@ -924,3 +924,81 @@ Processing by Site::WelcomeController#index as HTML
 Completed 200 OK in 169ms (Views: 168.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2023-05-22 09:41:19 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (156.3ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_singned_in?' for #<#<Class:0x00007fae247f58a8>:0x00007fae24fad2d0>
+Did you mean?  user_signed_in?):
+    1: <h1>Site::Welcome#index</h1>
+    2: <p>Find me in app/views/site/welcome/index.html.erb</p>
+    3: 
+    4: <% if user_singned_in?%>
+    5:     <p>Usuario ESTA Logado </p> 
+    6:  <%else%>
+    7:     <p>Usuario NAO ESTA Logado </p> 
+  
+app/views/site/welcome/index.html.erb:4:in `_app_views_site_welcome_index_html_erb___4303308560868290844_19080'
+Started GET "/" for 127.0.0.1 at 2023-05-22 09:42:24 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (152.0ms)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_singned_in?' for #<#<Class:0x00007fae247f58a8>:0x00007fae24edbed8>
+Did you mean?  user_signed_in?):
+    1: <h1>Site::Welcome#index</h1>
+    2: <p>Find me in app/views/site/welcome/index.html.erb</p>
+    3: 
+    4: <% if user_singned_in? %>
+    5:     <p>Usuario ESTA Logado </p> 
+    6:  <% else %>
+    7:     <p>Usuario NAO ESTA Logado </p> 
+  
+app/views/site/welcome/index.html.erb:4:in `_app_views_site_welcome_index_html_erb___4303308560868290844_19760'
+Started GET "/" for 127.0.0.1 at 2023-05-22 09:42:43 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (166.6ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_singned_in?' for #<#<Class:0x000055e39698ab78>:0x000055e3969653f0>
+Did you mean?  user_signed_in?):
+    1: <h1>Site::Welcome#index</h1>
+    2: <p>Find me in app/views/site/welcome/index.html.erb</p>
+    3: 
+    4: <% if user_singned_in? %>
+    5:     <p>Usuario ESTA Logado </p> 
+    6:  <% else %>
+    7:     <p>Usuario NAO ESTA Logado </p> 
+  
+app/views/site/welcome/index.html.erb:4:in `_app_views_site_welcome_index_html_erb__2864458045180484845_17180'
+Started GET "/" for 127.0.0.1 at 2023-05-22 09:43:27 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (108.4ms)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `User_singned_in?' for #<#<Class:0x000055e39698ab78>:0x000055e3979e4870>
+Did you mean?  user_signed_in?):
+    1: <h1>Site::Welcome#index</h1>
+    2: <p>Find me in app/views/site/welcome/index.html.erb</p>
+    3: 
+    4: <% if User_singned_in? %>
+    5:     <p>Usuario ESTA Logado </p> 
+    6:  <% else %>
+    7:     <p>Usuario NAO ESTA Logado </p> 
+  
+app/views/site/welcome/index.html.erb:4:in `_app_views_site_welcome_index_html_erb__2864458045180484845_17880'
