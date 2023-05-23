@@ -1157,3 +1157,245 @@ Migrating to DeviseCreateUsers (20230512184842)
   [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "admins"[0m
   [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mAdmin Load (0.8ms)[0m  [1m[34mSELECT  "admins".* FROM "admins" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:39:46 -0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (85.7ms)
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `User_singned_in?' for #<#<Class:0x000055d2ac6bcbf8>:0x00007f124031dbd0>
+Did you mean?  user_signed_in?):
+    1: <h1>Site::Welcome#index</h1>
+    2: <p>Find me in app/views/site/welcome/index.html.erb</p>
+    3: 
+    4: <% if User_singned_in? %>
+    5:     <p>Usuario ESTA Logado / <%= current_user.email%> </p> 
+    6:  <% else %>
+    7:     <p>Usuario NAO ESTA Logado </p> 
+  
+app/views/site/welcome/index.html.erb:4:in `_app_views_site_welcome_index_html_erb___611942055087656758_16740'
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:43:26 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (0.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/pedroimbriani/Desktop/time-to-answer/app/views/site/welcome/index.html.erb:6: else without rescue is useless
+'.freeze;  else 
+           ^~~~
+/home/pedroimbriani/Desktop/time-to-answer/app/views/site/welcome/index.html.erb:17: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/site/welcome/index.html.erb:6: else without rescue is useless
+app/views/site/welcome/index.html.erb:17: syntax error, unexpected `ensure', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:43:36 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/pedroimbriani/Desktop/time-to-answer/app/views/site/welcome/index.html.erb:6: else without rescue is useless
+'.freeze;  else 
+           ^~~~
+/home/pedroimbriani/Desktop/time-to-answer/app/views/site/welcome/index.html.erb:17: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/site/welcome/index.html.erb:6: else without rescue is useless
+app/views/site/welcome/index.html.erb:17: syntax error, unexpected `ensure', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:43:39 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (0.8ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/pedroimbriani/Desktop/time-to-answer/app/views/site/welcome/index.html.erb:6: else without rescue is useless
+'.freeze;  else 
+           ^~~~
+/home/pedroimbriani/Desktop/time-to-answer/app/views/site/welcome/index.html.erb:17: syntax error, unexpected `ensure', expecting end-of-input
+          ensure
+          ^~~~~~
+):
+  
+app/views/site/welcome/index.html.erb:6: else without rescue is useless
+app/views/site/welcome/index.html.erb:17: syntax error, unexpected `ensure', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:43:57 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (1.4ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-growl-ifightcrime/jquery.bootstrap-growl' with type 'application/javascript'
+Checked in these paths: 
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/config
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/vendor/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actioncable-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activestorage-5.2.8.1/app/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actionview-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/Desktop/time-to-answer/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application'%>
+     9:     <%= javascript_include_tag 'application' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/users_backoffice.coffee:8
+app/views/layouts/site.html.erb:8:in `_app_views_layouts_site_html_erb__2607979402642658022_19120'
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:45:59 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (1.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui/ui/widgets/datepicker' with type 'application/javascript'
+Checked in these paths: 
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/config
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/vendor/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actioncable-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activestorage-5.2.8.1/app/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actionview-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/Desktop/time-to-answer/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application'%>
+     9:     <%= javascript_include_tag 'application' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/users_backoffice.coffee:9
+app/views/layouts/site.html.erb:8:in `_app_views_layouts_site_html_erb__2607979402642658022_19740'
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:46:10 -0300
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activerecord-5.2.8.1/lib/active_record/log_subscriber.rb:98
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (0.6ms)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery-ui/ui/widgets/datepicker' with type 'application/javascript'
+Checked in these paths: 
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/config
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/vendor/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actioncable-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activestorage-5.2.8.1/app/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actionview-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/Desktop/time-to-answer/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application'%>
+     9:     <%= javascript_include_tag 'application' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/users_backoffice.coffee:9
+app/views/layouts/site.html.erb:8:in `_app_views_layouts_site_html_erb___3422814566932995389_16760'
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:46:57 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (0.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-growl-ifightcrime/jquery.bootstrap-growl' with type 'application/javascript'
+Checked in these paths: 
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/config
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/vendor/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actioncable-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activestorage-5.2.8.1/app/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actionview-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/Desktop/time-to-answer/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application'%>
+     9:     <%= javascript_include_tag 'application' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/users_backoffice.coffee:8
+app/views/layouts/site.html.erb:8:in `_app_views_layouts_site_html_erb___3422814566932995389_17420'
+Started GET "/" for 127.0.0.1 at 2023-05-23 07:46:59 -0300
+Processing by Site::WelcomeController#index as HTML
+  Rendering site/welcome/index.html.erb within layouts/site
+  Rendered site/welcome/index.html.erb within layouts/site (1.9ms)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-growl-ifightcrime/jquery.bootstrap-growl' with type 'application/javascript'
+Checked in these paths: 
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/config
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/app/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/images
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/javascripts
+  /home/pedroimbriani/Desktop/time-to-answer/lib/assets/stylesheets
+  /home/pedroimbriani/Desktop/time-to-answer/vendor/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actioncable-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/activestorage-5.2.8.1/app/assets/javascripts
+  /home/pedroimbriani/.rvm/gems/ruby-2.7.2/gems/actionview-5.2.8.1/lib/assets/compiled
+  /home/pedroimbriani/Desktop/time-to-answer/node_modules):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application'%>
+     9:     <%= javascript_include_tag 'application' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/users_backoffice.coffee:8
+app/views/layouts/site.html.erb:8:in `_app_views_layouts_site_html_erb___3422814566932995389_18000'
