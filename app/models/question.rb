@@ -4,4 +4,15 @@ class Question < ApplicationRecord
   accepts_nested_attributes_for :answers, reject_if: :all_blank, allow_destroy: true
 
   paginates_per 5
+
+  scope :_search_, ->(page,term){
+    includes(:answers)
+            .where("lower(descriptions) LIKE ?", "%#{term.downcase}%"
+            .page(page))
+  }
+
+ scope :last_questions, ->(page){
+    Question.include(:answers).order("created_at desc")
+                              .page(params[:page])
+ }
 end
