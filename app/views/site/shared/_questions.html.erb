@@ -1,17 +1,15 @@
 <div class="jumbotron">
-  <% unless params[:term]%>
-    <h3>ltimas perguntas cadastradas</h3>
-  <% else %>
-<h3>Resultados para o termo "<%= params[:term]%>"</h3>
-
-  <% end %>
+ <h3> <%= msg_jumbotron%> </h3> 
 </div>
 
 <% @questions.each do |question| %>
-  <%= form_with url: site_answer_path, local:true do |form|%>
+  <%= form_with url: site_answer_path, do |form|%>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title"><%= question.description %></h3>
+        <span class='label label-info' style='margin-right: 10px'>
+          <%= <%= link_to question.subject.description, site_search_subject_path(question.subject_id,question.subject.description), style:'color:white' %>
+        </span>
       </div>
       <div class="panel-body">
         <ul>
@@ -27,7 +25,7 @@
             </li>
           <% end %>
           <li style="list-style:none">
-            <%= form.submit "Responder", class:"btn btn-default"%>
+            <%= form.submit "Responder", class:"btn btn-default", id:"submit_#{question.id}"%>
           </li>
         </ul>
       </div>
